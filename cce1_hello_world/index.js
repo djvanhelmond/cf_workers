@@ -1,8 +1,15 @@
 export default {
-	fetch() {
-		return new Response('Hello worker!', {
+	fetch(request) {
+		if (request.method == "POST") {
+			var body = "POST Hello"
+			var content_type = "application/json"
+		} else {
+			var body = "GET Hello"
+			var content_type = "text/plain"
+		}
+		return new Response(body, {
 			headers: {
-				'content-type': 'text/plain',
+				'content-type': content_type,
 			},
 		});
 	},
