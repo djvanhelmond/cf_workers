@@ -1,8 +1,8 @@
 export default {
 	fetch() {
-		return new Response('Hello worker!', {
+		return new Response('Hello worker! Big Success!', {
 			headers: {
-				'content-type': 'text/plain',
+				'content-type': 'application/json',
 			},
 		});
 	},

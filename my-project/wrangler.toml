@@ -1,3 +1,4 @@
-name = "" # todo
+name = "hello_world" # todo
 main = "./index.js" 
 compatibility_date = "2022-05-03"
+route = { pattern = "cce1_hello_world.vanhelmond.io/*", zone_name = "vanhelmond.io" }
