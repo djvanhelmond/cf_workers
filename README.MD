@@ -1,1 +1,1 @@
-README.md
+Part of the Code Club EMEA (cohort 1)
