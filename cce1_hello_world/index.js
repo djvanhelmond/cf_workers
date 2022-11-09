@@ -1,7 +1,11 @@
 export default {
 	fetch(request) {
 		if (request.method == "POST") {
-			var body = "POST Hello"
+			const { searchParams } = new URL(request.url)
+			let name = searchParams.get('name')
+			if (name == null) {name = "Anon"} 
+			body = JSON.stringify({ greeting: "POST Hello", name: name })
+			console.log(body)
 			var content_type = "application/json"
 		} else {
 			var body = "GET Hello"
@@ -11,6 +15,6 @@ export default {
 			headers: {
 				'content-type': content_type,
 			},
-		});
+		})
 	},
 };
