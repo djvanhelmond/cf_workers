@@ -4,8 +4,7 @@ export default {
 			const { searchParams } = new URL(request.url)
 			let name = searchParams.get('name')
 			if (name == null) {name = "Anon"} 
-			body = JSON.stringify({ greeting: "POST Hello", name: name })
-			console.log(body)
+			var body = JSON.stringify({ greeting: "POST Hello", name: name })
 			var content_type = "application/json"
 		} else {
 			var body = "GET Hello"
