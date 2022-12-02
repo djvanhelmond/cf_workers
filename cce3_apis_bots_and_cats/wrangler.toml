@@ -1,3 +1,4 @@
-name = "" # todo
-main = "./index.js" 
+name = "cce3_apis_bots_and_cats"
+main = "./index.ts" 
 compatibility_date = "2022-05-03"
+route = { pattern = "cce3_apis_bots_and_cats.vanhelmond.io/*", zone_name = "vanhelmond.io" }
