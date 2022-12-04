@@ -48,7 +48,7 @@ export default {
 			response = new Response(modifiedBody, http200)
 		}
 
-		if ((request.cf.botManagement.score >= 29) && (request.cf.botManagement.score <= 99)) {
+		if ((request.cf.botManagement.score >= 30) && (request.cf.botManagement.score <= 99)) {
 			// Showtime! This is the real deal! Likely a human!
 			const targetUrl = "https://httpbin.org/get"
 			console.log("Likely a bag of meat with eyeballs and such")			
