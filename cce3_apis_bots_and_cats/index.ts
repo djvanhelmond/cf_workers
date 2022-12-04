@@ -21,7 +21,7 @@ export default {
 				cf: {
 					cacheTtl: 600,
 					cacheEverything: true,
-                    cacheKey: myCacheKey,
+					cacheKey: myCacheKey,
 				}	
 			})
 			response = new Response(http401.body, {
@@ -40,7 +40,7 @@ export default {
 				cf: {
 					cacheTtl: 20,
 					cacheEverything: true,
-                    cacheKey: myCacheKey,
+					cacheKey: myCacheKey,
 				}	
 			})
 			const jsonBody = await http200.json()
@@ -56,7 +56,7 @@ export default {
 				cf: {
 					cacheTtl: 20,
 					cacheEverything: true,
-                    cacheKey: myCacheKey,
+					cacheKey: myCacheKey,
 				}	
 			})
 			response = new Response(http200.body, http200)
@@ -71,7 +71,7 @@ export default {
 				cf: {
 					cacheTtl: 600,
 					cacheEverything: true,
-                    cacheKey: myCacheKey,
+					cacheKey: myCacheKey,
 				}	
 			})
 			response = new Response(http500.body, {
