@@ -76,7 +76,7 @@ export default {
 		})
 
 		// Cache the request if required
-        if (cf_storeInCache) {context.waitUntil(caches.default.put(request, originContent.clone()))}     
+		if (cf_storeInCache) {context.waitUntil(caches.default.put(request, originContent.clone()))}     
 
 		// Transform the body to JSON if likely automated
 		let newBody:any
